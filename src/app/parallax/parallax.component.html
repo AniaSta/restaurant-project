@@ -1,0 +1,85 @@
+<div class="first-image-container">
+    <app-header></app-header>
+    <div class="transparent-background-container" fxLayout="column" fxLayoutAlign="center center">
+        <div class="transparent-background blue-transparent" data-aos="fade-up" [ngStyle]="{
+        'background': isHover ? 'rgba(150, 201, 214, 30%)': 'rgba(3, 27, 66, 80%)'}">
+            <div class="headlines-container" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.lt-md="column"
+                fxLayout.md="column">
+                <h1 [ngStyle]="{'color': isHover ? 'rgba(1, 7, 23, 80%)' : 'rgba(64, 108, 251, 90%)'}"
+                    (mouseenter)="mouseHover($event)" (mouseleave)="mouseLeave($event)"
+                    [ngStyle.lt-md]="{ 'font-size.px': 40, 'color': isHover ? 'rgba(1, 7, 23, 80%)' : 'rgba(64, 108, 251, 90%)' }">
+                    About</h1>
+                <h1 [ngStyle]="{'color': isHover ? 'rgba(1, 7, 23, 80%)' : 'rgba(64, 108, 251, 90%)'}"
+                    (mouseenter)="mouseHover($event)" (mouseleave)="mouseLeave($event)"
+                    [ngStyle.lt-md]="{ 'font-size.px': 40, 'color': isHover ? 'rgba(1, 7, 23, 80%)' : 'rgba(64, 108, 251, 90%)' }">
+                    Welcome</h1>
+                <h1 [ngStyle]="{'color': isHover ? 'rgba(1, 7, 23, 80%)' : 'rgba(64, 108, 251, 90%)'}"
+                    (mouseenter)="mouseHover($event)" (mouseleave)="mouseLeave($event)"
+                    [ngStyle.lt-md]="{ 'font-size.px': 40, 'color': isHover ? 'rgba(1, 7, 23, 80%)' : 'rgba(64, 108, 251, 90%)' }">
+                    Info</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-container" fxLayout="row" fxLayoutAlign="center center" [ngStyle.lt-md]="{ 'height': 'auto' }">
+    <div class="text">
+        <h3>Lorem, ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio reiciendis doloribus at iste aperiam, ipsum
+            expedita dolorum est consectetur! Temporibus neque officiis eveniet ipsam non numquam labore velit quo ullam
+            modi hic dicta nihil impedit architecto explicabo, recusandae placeat illo incidunt quam cumque sed totam
+            dolor veritatis! Labore, corporis pariatur! Enim, tempora, ut soluta amet perspiciatis eius placeat
+            molestias provident pariatur blanditiis hic, voluptates eveniet numquam. Delectus totam possimus aliquam
+            enim atque, vel mollitia incidunt! Facere asperiores nihil vero illum quo nam neque ad animi. Iste omnis
+            accusamus, dolorem impedit expedita suscipit nobis atque, accusantium illum, alias quo exercitationem quod.
+        </p>
+    </div>
+</div>
+<div class="second-image-wrapper" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="second-image-container" [ngStyle.lt-md]= "{ 'width.%': 80 }" >
+        <div class="peach-transparent-background-container" fxLayout="column" fxLayoutAlign="center center">
+            <div class="pop-up-text">
+                <p class="text2">coś tam </p>
+            </div>
+            <div class="peach-transparent" data-aos="fade-up" [ngStyle.lt-md]= "{ 'position': 'unset', 'width.%': 90, 'height': 'auto'}">
+                <div fxLayout="column" fxLayoutAlign="center center" style="height: 100%">
+                    <h1>lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis vero nemo quisquam in
+                        labore hic, nihil praesentium atque, possimus veritatis ipsam, mollitia porro at impedit ex
+                        fugit? Cumque, corrupti reiciendis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="text-container" fxLayout="row" fxLayoutAlign="center center" [ngStyle.lt-md]="{ 'height': 'auto' }">
+    <div class="text">
+        <h3>Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi libero sit dicta! Quae illo aliquam
+            cupiditate
+            perspiciatis accusamus amet repellat sunt nulla eveniet sapiente ipsam veniam enim blanditiis accusantium,
+            nihil
+            possimus deserunt iusto, maxime nobis. Rerum mollitia dolores ipsum vel doloremque nobis laborum consectetur
+            quidem fuga fugit quis, obcaecati velit laboriosam repudiandae, eaque odit debitis tempora exercitationem
+            iusto
+            vitae nulla. Placeat dicta consectetur nulla nam? Ratione ipsa voluptates cum eius facilis? Porro corrupti
+            illo
+            quae quasi enim cupiditate itaque repudiandae ullam, nobis impedit fugiat blanditiis nesciunt placeat! Eum
+            maiores asperiores cumque quisquam blanditiis at tenetur, ab voluptatum minima deserunt perspiciatis.</p>
+    </div>
+</div>
+<div class="third-image-container">
+    <div class="transparent-square-wrapper" fxLayout="column" fxLayoutAlign="space-around center">
+        <div class="transparent-square-container" fxLayout="row" fxLayoutAlign="space-around center"
+            fxLayout.lt-md="column" data-aos="fade-left">
+            <div class="transparent-square first-column-color"></div>
+            <div class="transparent-square second-column-color"></div>
+            <div class="transparent-square third-column-color"></div>
+        </div>
+        <div class="transparent-square-container" fxLayout="row" fxLayoutAlign="space-around center"
+            fxLayout.lt-md="column" data-aos="fade-right">
+            <div class="transparent-square first-column-color"></div>
+            <div class="transparent-square second-column-color"></div>
+            <div class="transparent-square third-column-color"></div>
+        </div>
+    </div>
+</div>

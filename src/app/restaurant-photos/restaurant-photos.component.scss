@@ -1,0 +1,112 @@
+.photo_gallery {
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+  
+    .photo-description {
+      font-family: "Cinzel", serif;
+      font-weight: bold;
+      visibility: hidden;
+    }
+  
+    .first-row {
+      height: 70%;
+      .photo1 {
+        background-image: url("../../assets/photos/r1.jpg");
+        background-size: contain;
+        width: 70%;
+        height: 100%;
+        .photo1-text {
+          color: rgb(185, 80, 70);
+          width: 40%;
+          padding: 20px;
+          font-size: 30px;
+        }
+      }
+  
+      .photo2 {
+        background-image: url("../../assets/photos/r2.jpg");
+        background-attachment: fixed;
+        background-size: contain;
+        width: 30%;
+        height: 100%;
+        .photo2-text {
+          color: rgb(255, 250, 237);
+          font-size: 25px;
+          width: 25%;
+          padding: 30px;
+        }
+      }
+    }
+    .second-row {
+      height: 100%;
+      .photo3 {
+        background-image: url("../../assets/photos/r5.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        .photo3-text {
+          color: white;
+          font-size: 40px;
+          //background-color: rgba(255, 255, 255, 50%);
+        }
+      }
+    }
+    .third-row {
+      height: 80%;
+      .photo4 {
+        background-image: url("../../assets/photos/r3.jpg");
+        background-size: contain;
+        width: 33%;
+        height: 100%;
+        .photo4-text {
+          color: black;
+          width: 30%;
+          padding: 100px 30px;
+          font-size: 20px;
+        }
+      }
+      .photo5 {
+        background-image: url("../../assets/photos/r4.jpg");
+        background-attachment: fixed;
+        background-size: contain;
+        width: 67%;
+        height: 100%;
+  
+        .photo5-text {
+          color: rgb(76, 132, 123);
+          width: 30%;
+          padding: 30px;
+          font-size: 30px;
+        }
+      }
+    }
+    .fourth-row {
+      height: 100%;
+      .photo6 {
+        background-image: url("../../assets/photos/r6.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100%;
+  
+        .photo6-text {
+          color: rgb(255, 250, 237);
+          font-size: 30px;
+          padding: 90px;
+        }
+      }
+    }
+  }
+  
+  .photo1:hover,
+  .photo2:hover,
+  .photo3:hover,
+  .photo4:hover,
+  .photo5:hover,
+  .photo6:hover {
+    opacity: 80%;
+    .photo-description {
+      visibility: visible;
+    }
+  }

@@ -1,0 +1,70 @@
+.arrow {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 100;
+  font-size: 60px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    background-color: rgba(2, 5, 18, 0.8);
+    &:hover {
+      background-color: rgba(2, 5, 18, 1);
+    }
+  }
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(231, 230, 255);
+  padding: 7px;
+  &:hover {
+    text-decoration: underline;
+  }
+  &.active {
+    text-decoration: underline;
+  }
+}
+
+.header {
+  height: 15%;
+  background-color: rgba(2, 3, 20, 90%);
+  font-family: "Cinzel", serif;
+}
+
+.header-left-part {
+  width: 50%;
+}
+
+.header-right-part {
+  width: 50%;
+}
+
+button {
+  color: rgba(231, 230, 255);
+  background-color: rgb(2, 3, 20, 90%);
+  border: none;
+  margin-right: 25px;
+  outline: none;
+}
+
+mat-icon {
+  font-size: 36px;
+}
+
+.logo {
+  font-family: "Yeseva One", cursive;
+  font-size: 120px;
+  position: fixed;
+  left: 60px;
+  z-index: 2;
+  a {
+    color: rgb(255, 254, 242);
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}

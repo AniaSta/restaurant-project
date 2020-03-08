@@ -1,0 +1,28 @@
+<div id="top" [ngStyle]="isTransparent ? {'background-color': 'rgba(2, 5, 18, .8)'} : {'background-color': 'rgba(2, 5, 18, 1)'}"
+    class="header" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="header-left-part" fxLayout="row" fxLayoutAlign="start center">
+        <div routerLink="restaurant" class="logo"><a scrollTo href="#top">R.</a></div>
+    </div>
+    <div class="header-right-part" fxLayout="row" fxLayoutAlign="space-around center"
+        [ngStyle.lt-md]="{ 'font-size.px': 10 }" fxLayout.lt-md="column" fxLayoutAlign.lt-md="space-between start"
+        fxShow="true" fxShow.lt-md="false">
+            <a [routerLink]="restaurant_menuUrl" routerLinkActive="active">Menu</a>
+            <a scrollTo routerLink="our_philosophy" fragment="our_philosophy">Our philosophy</a>
+            <a scrollTo routerLink="our_locations" fragment="our_locations">Our locations</a>
+            <a scrollTo routerLink="contact_and_reservations" fragment="contact">Contact and reservations</a>
+            <a [routerLink]="['/restaurant_photos']" routerLinkActive="active">Photo gallery</a>
+    </div>
+    <div class="header-right-part" fxLayout="row" fxLayoutAlign="end center" fxShow="false" fxShow.lt-md="true">
+        <mat-menu #appMenu="matMenu">
+            <a [routerLink]="restaurant_menuUrl" routerLinkActive="active">Menu</a>
+            <div><a scrollTo routerLink="our_philosophy" fragment="our_philosophy">Our philosophy</a></div>
+            <div><a scrollTo routerLink="our_locations" fragment="our_locations">Our locations</a></div>
+            <div><a scrollTo href="#contact_and_reservations">Contact and reservations</a></div>
+            <div><a [routerLink]="['/restaurant_photos']" routerLinkActive="active">Photo gallery</a></div>
+        </mat-menu>
+        <button mat-icon-button [matMenuTriggerFor]="appMenu">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+</div>
+<mat-icon class="arrow"><a scrollTo href="#top">keyboard_arrow_up</a></mat-icon>

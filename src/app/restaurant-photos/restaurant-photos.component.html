@@ -1,0 +1,32 @@
+<app-restaurant-header></app-restaurant-header>
+<div class="photo_gallery" [ngStyle.lt-md]="{ 'height': 'auto' }">
+    <div class="first-row" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.lt-md="column">
+        <div class="photo1" [ngStyle.lt-md]="{ 'width': 'auto', 'background-size': 'cover' }">
+            <p class="photo-description photo1-text">Freshly squeezed lemons add refreshing twist to many meals</p>
+        </div>
+        <div class="photo2" [ngStyle.lt-md]="{ 'width': 'auto', 'background-size': 'cover' }">
+            <p class="photo-description photo2-text">There's nothing like a chilly drink on a hot day</p>
+        </div>
+    </div>
+    <div class="second-row">
+        <div class="photo3" fxLayout="row" fxLayoutAlign="space-around start">
+            <p class="photo-description photo3-text">Our place was designed by the best architects in the field. We
+                wanted to create a space that is welcoming and cosy so guests can feel relaxed enjoying their meals</p>
+        </div>
+    </div>
+    <div class="third-row" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.lt-md="column">
+        <div class="photo4" [ngStyle.lt-md]="{ 'width': 'auto', 'background-size': 'cover' }">
+            <p class="photo-description photo4-text">Our specifically qualified barists and deliberately selected coffee
+                beans from Kenia will make you addicted to our coffee</p>
+        </div>
+        <div class="photo5" [ngStyle.lt-md]="{ 'width': 'auto' }">
+            <p class="photo-description photo5-text">Our matcha latte prepared with the highest quality ingredients</p>
+        </div>
+    </div>
+    <div class="fourth-row">
+        <div class="photo6" fxLayout="row">
+            <p class="photo-description photo6-text">Try our healthy snacks which will be perfect addition to coffee and
+                coctails</p>
+        </div>
+    </div>
+</div>
