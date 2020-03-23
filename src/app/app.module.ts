@@ -5,7 +5,7 @@ import { ParallaxModule } from 'ngx-parallax';
 import { ScrollToModule } from 'ng2-scroll-to';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +18,7 @@ import { RestaurantHeaderComponent } from './restaurant-header/restaurant-header
 import { RestaurantMenuComponent } from './restaurant-menu/restaurant-menu.component';
 import { RestaurantPhotosComponent } from './restaurant-photos/restaurant-photos.component';
 import { RestaurantFooterComponent } from './restaurant-footer/restaurant-footer.component';
+import { PopUpComponent } from './pop-up/pop-up.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { RestaurantFooterComponent } from './restaurant-footer/restaurant-footer
     RestaurantHeaderComponent,
     RestaurantMenuComponent,
     RestaurantPhotosComponent,
-    RestaurantFooterComponent
+    RestaurantFooterComponent,
+    PopUpComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { RestaurantFooterComponent } from './restaurant-footer/restaurant-footer
     ParallaxModule,
     ScrollToModule.forRoot(),
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

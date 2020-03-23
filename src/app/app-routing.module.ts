@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestaurantMenuComponent } from './restaurant-menu/restaurant-menu.component';
 import { RestaurantPhotosComponent } from './restaurant-photos/restaurant-photos.component';
+import { PopUpComponent } from './pop-up/pop-up.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: "restaurant_photos",
     component: RestaurantPhotosComponent
+  },
+  {
+    path: "pop-up",
+    component: PopUpComponent
   },
   {
     path: "**",

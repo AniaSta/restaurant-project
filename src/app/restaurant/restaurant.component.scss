@@ -38,10 +38,13 @@
   .headline {
     color: rgb(231, 230, 255);
     width: 40%;
+    font-size: 24px;
   }
   .text {
     color: rgb(231, 230, 255);
     width: 60%;
+    font-size: 17px;
+    padding-right: 80px;
   }
 }
 
@@ -90,6 +93,7 @@
     //background-color: rgb(35, 64, 59);
     background-image: url("../../assets/photos/rrr.jpg");
     background-size: contain;
+    background-attachment: fixed;
     width: 98%;
     height: 95%;
     .contact-paragraphs-container {

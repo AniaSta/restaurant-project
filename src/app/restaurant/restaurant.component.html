@@ -34,36 +34,40 @@
     <div class="opening-hours" fxLayout="column" fxLayoutAlign="space-around center">
         <h1>- Opening hours -</h1>
         <div class="days" fxLayout="column" fxLayoutAlign="space-around center">
-        <span>Monday - Thursday: </span>
-        <span>10:00 - 22:00</span>
-    </div>
-    <div class="days" fxLayout="column" fxLayoutAlign="space-around center">
-        <span>Friday - Sunday:</span>
-        <span>9:00 - 23:00</span>
-    </div>
+            <span>Monday - Thursday: </span>
+            <span>10:00 - 22:00</span>
+        </div>
+        <div class="days" fxLayout="column" fxLayoutAlign="space-around center">
+            <span>Friday - Sunday:</span>
+            <span>9:00 - 23:00</span>
+        </div>
     </div>
 </div>
 <div id="our_philosophy" class="philosophy" fxLayout="row" fxLayoutAlign="space-around center"
     [ngStyle.lt-md]="{ 'height.%': 60 }" fxLayout.lt-md="column" fxLayoutAlign.lt-md="space-evenly center">
     <div class="headline" fxLayoutAlign="center" [ngStyle.lt-md]="{ 'width': 'auto' }">- Our Philosophy -</div>
-    <div class="text" [ngStyle.lt-md]="{ 'width.%': 80, 'font-size.px': 13 }">Lorem ipsum dolor sit amet consectetur
+    <div class="text" [ngStyle.lt-md]="{ 'width.%': 80, 'font-size.px': 13, 'padding': 0 }">Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Excepturi inventore, aspernatur, velit
         accusantium quam nostrum mollitia voluptas dignissimos quasi numquam optio earum porro error enim provident
         asperiores non facilis minima. Exercitationem sapiente ratione dolor totam assumenda asperiores accusamus ipsum
         ipsam? Quibusdam vitae consectetur veritatis molestias tempora, officia labore obcaecati qui ratione
         consequuntur sapiente odio eius aliquid inventore omnis sunt amet.</div>
 </div>
-<div id="contact" class="contact" fxLayout="row" fxLayoutAlign="space-around center" [ngStyle.lt-md]="{ 'height': 'auto', 'padding.px': 15 }">
+<div id="contact" class="contact" fxLayout="row" fxLayoutAlign="space-around center"
+    [ngStyle.lt-md]="{ 'height': 'auto', 'padding.px': 15 }">
     <div class="contact-container" fxLayout="row" fxLayoutAlign="space-around center">
-        <div class="contact-paragraphs-container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
-            <div class="paragraph_1" [ngStyle.lt-md]="{ 'width': 'auto', 'padding-top.px': 20, 'padding-bottom.px': 20, 'position': 'unset', 'margin-top.px': 30, 'margin-bottom.px': 30 }">
+        <div class="contact-paragraphs-container" fxLayout="row" fxLayout.lt-md="column"
+            fxLayoutAlign="space-around center">
+            <div class="paragraph_1"
+                [ngStyle.lt-md]="{ 'width': 'auto', 'padding-top.px': 20, 'padding-bottom.px': 20, 'position': 'unset', 'margin-top.px': 30, 'margin-bottom.px': 30 }">
                 <h1>Contact us</h1>
                 <p>Feel free to contact us via telephone or e-mail</p>
                 <span><a href=”637090248”>Tel: 637 090 248</a></span>
                 <span>Fax: 812 394 155</span>
                 <span>E-mail: restaurant@gmail.com</span>
             </div>
-            <div class="paragraph_2" [ngStyle.lt-md]="{ 'width': 'auto', 'padding-top.px': 20, 'padding-bottom.px': 20, 'position': 'unset', 'margin-bottom.px': 30 }">
+            <div class="paragraph_2"
+                [ngStyle.lt-md]="{ 'width': 'auto', 'padding-top.px': 20, 'padding-bottom.px': 20, 'position': 'unset', 'margin-bottom.px': 30 }">
                 <h1>Booking policy</h1>
                 <p>You can book a table in our restaurant three days earlier. Please let us know in case of any delay.
                     The reservation will be canceled after 15 minutes from the set time if you don't arrive on time.

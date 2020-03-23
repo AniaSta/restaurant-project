@@ -1,7 +1,9 @@
 <div id="top" [ngStyle]="isTransparent ? {'background-color': 'rgba(2, 5, 18, .8)'} : {'background-color': 'rgba(2, 5, 18, 1)'}"
     class="header" fxLayout="row" fxLayoutAlign="space-around center">
     <div class="header-left-part" fxLayout="row" fxLayoutAlign="start center">
-        <div routerLink="restaurant" class="logo"><a scrollTo href="#top">R.</a></div>
+        <div routerLink="restaurant" class="logo">
+            <a scrollTo href="#top" [ngStyle.lt-md]="{ 'font-size.px': 70, 'position': 'fixed', 'top.px': -5, 'left.px': 20 }">R.</a>
+        </div>
     </div>
     <div class="header-right-part" fxLayout="row" fxLayoutAlign="space-around center"
         [ngStyle.lt-md]="{ 'font-size.px': 10 }" fxLayout.lt-md="column" fxLayoutAlign.lt-md="space-between start"
@@ -13,16 +15,19 @@
             <a [routerLink]="['/restaurant_photos']" routerLinkActive="active">Photo gallery</a>
     </div>
     <div class="header-right-part" fxLayout="row" fxLayoutAlign="end center" fxShow="false" fxShow.lt-md="true">
-        <mat-menu #appMenu="matMenu">
-            <a [routerLink]="restaurant_menuUrl" routerLinkActive="active">Menu</a>
-            <div><a scrollTo routerLink="our_philosophy" fragment="our_philosophy">Our philosophy</a></div>
-            <div><a scrollTo routerLink="our_locations" fragment="our_locations">Our locations</a></div>
-            <div><a scrollTo href="#contact_and_reservations">Contact and reservations</a></div>
-            <div><a [routerLink]="['/restaurant_photos']" routerLinkActive="active">Photo gallery</a></div>
+        <mat-menu #appMenu="matMenu" fxLayout="column" fxLayoutAlign="space-around center">
+            <div class="glass-effect">
+            <div class="mat-menu-link" fxLayout="row" fxLayoutAlign="space-around center"><a [routerLink]="restaurant_menuUrl" routerLinkActive="active">- Menu -</a></div>
+            <div class="mat-menu-link" fxLayout="row" fxLayoutAlign="space-around center"><a scrollTo routerLink="our_philosophy" fragment="our_philosophy">- Our philosophy -</a></div>
+            <div class="mat-menu-link" fxLayout="row" fxLayoutAlign="space-around center"><a scrollTo routerLink="our_locations" fragment="our_locations">- Our locations -</a></div>
+            <div class="mat-menu-link" fxLayout="row" fxLayoutAlign="space-around center"><a style="width:66%;" scrollTo routerLink="contact_and_reservations" fragment="contact">- Contact and reservations -</a></div>
+            <div class="mat-menu-link" fxLayout="row" fxLayoutAlign="space-around center"><a [routerLink]="['/restaurant_photos']" routerLinkActive="active">- Photo gallery -</a></div>
+            <div class="mat-menu-link" fxLayout="row" fxLayoutAlign="space-around center" style="position: absolute; bottom: 60px; left: 90px;">- Back -</div> 
+        </div>
         </mat-menu>
         <button mat-icon-button [matMenuTriggerFor]="appMenu">
             <mat-icon>menu</mat-icon>
         </button>
     </div>
 </div>
-<mat-icon class="arrow"><a scrollTo href="#top">keyboard_arrow_up</a></mat-icon>
+<mat-icon class="arrow"><a [ngStyle.lt-md]="{'font-size.px': 50, 'position': 'fixed', 'bottom.px': 10, 'right.px': 10 }" scrollTo href="#top">keyboard_arrow_up</a></mat-icon>
