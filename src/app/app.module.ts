@@ -9,10 +9,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ParallaxComponent } from './parallax/parallax.component';
-import { HeaderComponent } from './header/header.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestaurantHeaderComponent } from './restaurant-header/restaurant-header.component';
 import { RestaurantMenuComponent } from './restaurant-menu/restaurant-menu.component';
@@ -23,9 +20,6 @@ import { PopUpComponent } from './pop-up/pop-up.component';
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
-    ParallaxComponent,
-    HeaderComponent,
     RestaurantComponent,
     RestaurantHeaderComponent,
     RestaurantMenuComponent,
